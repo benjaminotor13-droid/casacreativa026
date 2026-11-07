@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Casa Creativa — Academia de Música, Arte e Inglés en Barcequillo</title>
+<meta name="description" content="Casa Creativa es una academia en Barcequillo, San Lorenzo, donde aprendés música, arte e inglés con profesores apasionados. Clases presenciales y virtuales, todas las edades. Agendá tu clase por WhatsApp.">
+<meta name="keywords" content="academia de música, clases de arte, clases de inglés, Barcequillo, San Lorenzo, piano, guitarra, canto, pintura, musicalización de eventos">
+<meta name="author" content="Casa Creativa">
+<meta name="theme-color" content="#130D22">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Casa Creativa — Descubrí tu talento creativo">
+<meta property="og:description" content="Música, arte e inglés con profesores apasionados. Clases presenciales y virtuales en Barcequillo. Agendá tu clase hoy.">
+<meta property="og:image" content="assets/images/og-cover.jpg">
+<meta property="og:locale" content="es_PY">
+<meta property="og:site_name" content="Casa Creativa">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Casa Creativa — Descubrí tu talento creativo">
+<meta name="twitter:description" content="Música, arte e inglés con profesores apasionados en Barcequillo.">
+<meta name="twitter:image" content="assets/images/og-cover.jpg">
+
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://www.casacreativa.com.py/">
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Casa Creativa",
+  "description": "Academia de música, arte e inglés con clases presenciales y virtuales, y servicio de musicalización de eventos.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1723 Pirizal, a una cuadra del Colegio Sudamericano",
+    "addressLocality": "Barcequillo",
+    "addressRegion": "San Lorenzo",
+    "addressCountry": "PY"
+  },
+  "telephone": ["+595986848246", "+595984177738"],
+  "sameAs": ["https://facebook.com/casacreativa", "https://instagram.com/casacreativa"]
+}
+</script>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Splitting.js (text animation) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/splitting@1.1.0/dist/splitting.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/splitting@1.1.0/dist/splitting-cells.css">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="js-disabled">
+
+<a href="#main" class="skip-link">Saltar al contenido</a>
+
+<!-- Custom cursor -->
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+
+<!-- Loader -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader-mark">Casa Creativa</div>
+  <div class="loader-bar"><span id="loader-bar-fill"></span></div>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a href="#main" class="nav-logo"><span class="dot"></span>Casa Creativa</a>
+  <nav class="nav-links" id="navLinks" aria-label="Navegación principal">
+    <a href="#aprender">Aprender</a>
+    <a href="#profesores">Profesores</a>
+    <a href="#musica">Música</a>
+    <a href="#arte">Arte</a>
+    <a href="#ingles">Inglés</a>
+    <a href="#eventos">Eventos</a>
+    <a href="#ubicacion">Ubicación</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <div class="nav-cta-group">
+    <a class="btn btn-primary" href="#contacto" data-cursor-pop>
+      <i data-lucide="calendar-days"></i> Agendar clase
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow on-dark" data-reveal>Academia de música · arte · idiomas</p>
+        <h1 class="hero-title" id="heroTitle" data-splitting>Descubrí tu <em>talento</em> creativo</h1>
+        <p class="hero-sub" data-reveal>Aprendé música, arte e inglés con profesores apasionados, en un espacio pensado para que cada clase sea un lugar al que dan ganas de volver. Clases presenciales o virtuales, a tu ritmo.</p>
+        <div class="hero-ctas" data-reveal>
+          <a href="#contacto" class="btn btn-whatsapp" data-cursor-pop>
+            <i data-lucide="calendar-check"></i> Agendar clase
+          </a>
+          <a href="#aprender" class="btn btn-outline on-dark" data-cursor-pop>
+            <i data-lucide="music-2"></i> Conocer cursos
+          </a>
+        </div>
+        <div class="hero-meta" data-reveal>
+          <div><strong>3</strong>disciplinas</div>
+          <div><strong>+10</strong>años de experiencia</div>
+          <div><strong>100%</strong>a tu medida</div>
+        </div>
+      </div>
+
+      <div class="hero-stage" aria-hidden="true">
+        <svg viewBox="0 0 400 420" class="constellation-svg">
+          <path id="cline1" class="constellation-line" d="M60 40 L 350 90" />
+          <path id="cline2" class="constellation-line" d="M350 90 L 40 220" />
+          <path id="cline3" class="constellation-line" d="M40 220 L 340 260" />
+          <path id="cline4" class="constellation-line" d="M340 260 L 130 390" />
+          <path id="cline5" class="constellation-line" d="M130 390 L 60 40" />
+          <path id="cline6" class="constellation-line" d="M200 210 L 60 40 M200 210 L 350 90 M200 210 L 40 220 M200 210 L 340 260 M200 210 L 130 390" />
+        </svg>
+        <div class="hero-node n-piano" data-float><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M3 6h18v12H3z"/><path d="M7 6v8M11 6v8M15 6v8M19 6v8"/></svg></div>
+        <div class="hero-node n-guitar" data-float><i data-lucide="guitar"></i></div>
+        <div class="hero-node n-mic" data-float><i data-lucide="mic-2"></i></div>
+        <div class="hero-node n-brush" data-float><i data-lucide="paintbrush"></i></div>
+        <div class="hero-node n-book" data-float><i data-lucide="book-open"></i></div>
+        <div class="hero-node n-note" data-float><i data-lucide="music-4"></i></div>
+        <div class="hero-core"><span>Tu camino creativo</span></div>
+      </div>
+    </div>
+
+    <div class="scroll-cue" aria-hidden="true"><span>Desplazate</span><span class="line"></span></div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track" id="marqueeTrack">
+      <span><i>♪</i> Piano</span><span><i>♪</i> Guitarra</span><span><i>♪</i> Canto</span><span><i>♪</i> Teoría musical</span>
+      <span><i>✎</i> Dibujo</span><span><i>✎</i> Pintura</span><span><i>✎</i> Escultura</span><span><i>✎</i> Artesanías</span>
+      <span><i>A</i> Inglés</span><span><i>A</i> Clases virtuales</span><span><i>♫</i> Musicalización de eventos</span>
+    </div>
+  </div>
+
+  <!-- ============ APRENDER ============ -->
+  <section class="section-pad" id="aprender">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow" data-reveal>¿Qué podés aprender?</p>
+          <h2 class="section-title" data-reveal>Tres caminos, <em>una misma casa</em></h2>
+        </div>
+        <p class="section-lede" data-reveal>Elegí tu disciplina o combiná varias — muchos de nuestros alumnos aprenden música y arte a la vez, o suman inglés a su rutina semanal.</p>
+      </div>
+
+      <div class="pathways-grid">
+        <article class="pathway-card card-music reveal" data-tilt data-tilt-max="6" data-tilt-speed="600" data-tilt-glare data-tilt-max-glare="0.15">
+          <div class="blob"></div>
+          <div class="pathway-icon"><i data-lucide="piano"></i></div>
+          <h3>Música</h3>
+          <p>Del primer acorde a tu primer escenario, con seguimiento personalizado en cada clase.</p>
+          <ul class="pathway-list">
+            <li><i data-lucide="check"></i>Piano</li>
+            <li><i data-lucide="check"></i>Guitarra</li>
+            <li><i data-lucide="check"></i>Canto</li>
+            <li><i data-lucide="check"></i>Teoría musical</li>
+            <li><i data-lucide="check"></i>Musicalización de eventos</li>
+          </ul>
+          <a href="#musica" class="pathway-more">Explorar música <i data-lucide="arrow-right"></i></a>
+        </article>
+
+        <article class="pathway-card card-art reveal" data-tilt data-tilt-max="6" data-tilt-speed="600" data-tilt-glare data-tilt-max-glare="0.15">
+          <div class="blob"></div>
+          <div class="pathway-icon"><i data-lucide="palette"></i></div>
+          <h3>Arte</h3>
+          <p>Un taller para soltar la mano, probar técnicas nuevas y encontrar tu propio estilo.</p>
+          <ul class="pathway-list">
+            <li><i data-lucide="check"></i>Dibujo</li>
+            <li><i data-lucide="check"></i>Pintura</li>
+            <li><i data-lucide="check"></i>Escultura</li>
+            <li><i data-lucide="check"></i>Artesanías</li>
+          </ul>
+          <a href="#arte" class="pathway-more">Explorar arte <i data-lucide="arrow-right"></i></a>
+        </article>
+
+        <article class="pathway-card card-english reveal" data-tilt data-tilt-max="6" data-tilt-speed="600" data-tilt-glare data-tilt-max-glare="0.15">
+          <div class="blob"></div>
+          <div class="pathway-icon"><i data-lucide="languages"></i></div>
+          <h3>Inglés</h3>
+          <p>Práctico, conversacional y con material incluido — pensado para usarlo desde la primera semana.</p>
+          <ul class="pathway-list">
+            <li><i data-lucide="check"></i>Inglés como segunda lengua</li>
+            <li><i data-lucide="check"></i>Clases virtuales</li>
+            <li><i data-lucide="check"></i>Material incluido</li>
+            <li><i data-lucide="check"></i>Grupos reducidos</li>
+          </ul>
+          <a href="#ingles" class="pathway-more">Explorar inglés <i data-lucide="arrow-right"></i></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROFESORES ============ -->
+  <section class="section-pad section-dark" id="profesores">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow on-dark" data-reveal>Quiénes te acompañan</p>
+          <h2 class="section-title" style="color:#fff" data-reveal>Conocé a los <em>profesores</em></h2>
+        </div>
+        <p class="section-lede" style="color:rgba(255,255,255,.65)" data-reveal>Dos personas, dos miradas — la misma dedicación por enseñar bien y de cerca.</p>
+      </div>
+
+      <div class="teachers-grid">
+        <article class="teacher-card t-music reveal" data-tilt data-tilt-max="4" data-tilt-speed="700">
+          <div class="teacher-photo">Prof.<br>Música</div>
+          <div>
+            <p class="teacher-role">Profesor de música</p>
+            <h3 class="teacher-name">Formación integral al piano, la guitarra y la voz</h3>
+            <p class="teacher-bio">Cree que cada alumno aprende distinto, así que arma cada clase según el oído, el objetivo y el ritmo de la persona que tiene enfrente. También lidera la musicalización en vivo para bodas y eventos de la academia.</p>
+            <div class="teacher-tags">
+              <span>Piano</span><span>Guitarra</span><span>Canto</span><span>Teoría</span><span>Eventos en vivo</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="teacher-card t-art reveal" data-tilt data-tilt-max="4" data-tilt-speed="700">
+          <div class="teacher-photo">Prof.<br>Arte &amp; Inglés</div>
+          <div>
+            <p class="teacher-role">Profesora de arte e inglés</p>
+            <h3 class="teacher-name">Talleres creativos y clases de inglés con mucha energía</h3>
+            <p class="teacher-bio">Convierte cada técnica en un juego serio: color, textura, materiales reciclados y mucha paciencia. Sus clases de inglés son prácticas, conversacionales y disponibles también en formato virtual.</p>
+            <div class="teacher-tags">
+              <span>Pintura</span><span>Dibujo</span><span>Escultura</span><span>Manualidades</span><span>Inglés virtual</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BENEFICIOS ============ -->
+  <section class="section-pad" id="beneficios">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow" data-reveal>Por qué Casa Creativa</p>
+          <h2 class="section-title" data-reveal>Aprender bien, <em>de cerca</em></h2>
+        </div>
+      </div>
+      <div class="benefits-grid">
+        <div class="benefit-card reveal"><div class="benefit-check"><i data-lucide="user-check"></i></div><p>Atención personalizada</p></div>
+        <div class="benefit-card reveal"><div class="benefit-check"><i data-lucide="house"></i></div><p>Clases presenciales y virtuales</p></div>
+        <div class="benefit-card reveal"><div class="benefit-check"><i data-lucide="clock"></i></div><p>Horarios flexibles</p></div>
+        <div class="benefit-card reveal"><div class="benefit-check"><i data-lucide="target"></i></div><p>Aprendizaje por objetivos</p></div>
+        <div class="benefit-card reveal"><div class="benefit-check"><i data-lucide="calendar-range"></i></div><p>Módulos de tres meses</p></div>
+        <div class="benefit-card reveal"><div class="benefit-check"><i data-lucide="users"></i></div><p>Todas las edades</p></div>
+        <div class="benefit-card reveal"><div class="benefit-check"><i data-lucide="sparkles"></i></div><p>Ambiente creativo</p></div>
+        <div class="benefit-card reveal"><div class="benefit-check"><i data-lucide="line-chart"></i></div><p>Seguimiento individual</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MÚSICA (inmersivo) ============ -->
+  <section class="discipline discipline-music" id="musica">
+    <div class="wrap discipline-grid">
+      <div>
+        <p class="eyebrow on-dark" data-reveal>Música</p>
+        <h2 class="section-title" style="color:#fff" data-reveal>Un oído que se <em>entrena</em>, una voz que se encuentra</h2>
+        <p class="section-lede" style="color:rgba(255,255,255,.65)" data-reveal>Desde cero o para retomar donde lo dejaste. Cada módulo combina técnica, repertorio y mucha práctica guiada.</p>
+
+        <div class="discipline-items">
+          <div class="discipline-item reveal">
+            <div class="di-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h18v12H3z"/><path d="M7 6v8M11 6v8M15 6v8M19 6v8"/></svg></div>
+            <div><h4>Piano</h4><p>Postura, lectura de partitura y repertorio a tu nivel, desde el primer día.</p></div>
+          </div>
+          <div class="discipline-item reveal">
+            <div class="di-icon"><i data-lucide="guitar"></i></div>
+            <div><h4>Guitarra</h4><p>Acordes, rasgueo y punteo — acústica o eléctrica, según lo que quieras tocar.</p></div>
+          </div>
+          <div class="discipline-item reveal">
+            <div class="di-icon"><i data-lucide="mic-2"></i></div>
+            <div><h4>Canto</h4><p>Respiración, afinación y proyección, cuidando siempre tu voz.</p></div>
+          </div>
+          <div class="discipline-item reveal">
+            <div class="di-icon"><i data-lucide="book-open"></i></div>
+            <div><h4>Teoría musical</h4><p>El lenguaje detrás de la música, explicado sin vueltas.</p></div>
+          </div>
+        </div>
+        <a href="#contacto" class="btn btn-whatsapp reveal" style="margin-top:34px" data-cursor-pop><i data-lucide="message-circle"></i> Quiero aprender música</a>
+      </div>
+
+      <div class="discipline-visual reveal">
+        <div class="disc-ring"></div>
+        <div class="disc-ring r2"></div>
+        <div class="disc-center"><i data-lucide="music-4"></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ARTE (inmersivo) ============ -->
+  <section class="discipline discipline-art" id="arte">
+    <div class="wrap discipline-grid">
+      <div class="discipline-visual reveal" style="order:2">
+        <div class="gallery-scroll" role="list" aria-label="Galería de arte">
+          <div class="gallery-card g1" role="listitem"><i data-lucide="paintbrush"></i><span>Pintura</span></div>
+          <div class="gallery-card g2" role="listitem"><i data-lucide="pencil"></i><span>Dibujo</span></div>
+          <div class="gallery-card g3" role="listitem"><i data-lucide="droplet"></i><span>Acuarela</span></div>
+          <div class="gallery-card g4" role="listitem"><i data-lucide="hammer"></i><span>Artesanías</span></div>
+          <div class="gallery-card g5" role="listitem"><i data-lucide="shapes"></i><span>Escultura</span></div>
+        </div>
+      </div>
+      <div style="order:1">
+        <p class="eyebrow" data-reveal>Arte</p>
+        <h2 class="section-title" data-reveal>Un taller para <em>ensuciarse</em> las manos</h2>
+        <p class="section-lede" data-reveal>Técnicas clásicas y materiales nuevos, en un espacio donde el error también enseña. Deslizá la galería para ver todas las disciplinas.</p>
+        <div class="discipline-items">
+          <div class="discipline-item reveal"><div class="di-icon"><i data-lucide="paintbrush"></i></div><div><h4>Pintura</h4><p>Óleo, acrílico y acuarela — composición, color y textura.</p></div></div>
+          <div class="discipline-item reveal"><div class="di-icon"><i data-lucide="pencil"></i></div><div><h4>Dibujo</h4><p>Trazo, proporción y sombra, desde el boceto hasta el detalle.</p></div></div>
+          <div class="discipline-item reveal"><div class="di-icon"><i data-lucide="shapes"></i></div><div><h4>Escultura</h4><p>Volumen y materiales — arcilla, yeso y más.</p></div></div>
+          <div class="discipline-item reveal"><div class="di-icon"><i data-lucide="hammer"></i></div><div><h4>Artesanías</h4><p>Proyectos con materiales reciclados y técnicas manuales.</p></div></div>
+        </div>
+        <a href="#contacto" class="btn btn-primary reveal" style="margin-top:34px" data-cursor-pop><i data-lucide="message-circle"></i> Quiero aprender arte</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INGLÉS (estilo Duolingo) ============ -->
+  <section class="discipline discipline-english" id="ingles">
+    <div class="wrap" style="text-align:center">
+      <p class="eyebrow" style="color:#06322D" data-reveal>Inglés</p>
+      <h2 class="section-title" style="margin-inline:auto;color:#06322D" data-reveal>Practicalo desde <em style="color:#fff">la primera clase</em></h2>
+      <p class="section-lede" style="margin-inline:auto;color:rgba(6,50,45,.72)" data-reveal>Nada de memorizar reglas sueltas: hablás desde el día uno, con grupos reducidos y material que te llevás a casa.</p>
+
+      <div class="duo-cards">
+        <div class="duo-card reveal"><i data-lucide="globe"></i><h4>Inglés práctico</h4><p>Conversación real desde la primera semana.</p></div>
+        <div class="duo-card reveal"><i data-lucide="laptop"></i><h4>Virtual</h4><p>Clases por videollamada, mismo nivel de atención.</p></div>
+        <div class="duo-card reveal"><i data-lucide="book-open-check"></i><h4>Material incluido</h4><p>Todo lo que necesitás, ya está en tu clase.</p></div>
+        <div class="duo-card reveal"><i data-lucide="users-round"></i><h4>Grupos reducidos</h4><p>Más práctica, menos espera para hablar.</p></div>
+      </div>
+      <a href="#contacto" class="btn btn-primary reveal" style="margin-top:44px;background:#06322D" data-cursor-pop><i data-lucide="message-circle"></i> Quiero aprender inglés</a>
+    </div>
+  </section>
+
+  <!-- ============ EVENTOS ============ -->
+  <section class="section-pad" id="eventos">
+    <div class="wrap">
+      <div class="events-band">
+        <div>
+          <p class="eyebrow on-dark" data-reveal>Musicalización de eventos</p>
+          <h2 class="section-title" style="color:#fff" data-reveal>Música en vivo para tu <em>gran día</em></h2>
+          <p class="section-lede" style="color:rgba(255,255,255,.7)" data-reveal>Además de las clases, llevamos música en vivo a tu celebración — piano, guitarra y voz, con un repertorio armado a tu gusto.</p>
+          <div class="events-list reveal">
+            <span>Bodas</span><span>Cumpleaños</span><span>Eventos privados</span><span>Actos</span><span>Ceremonias</span><span>Recepciones</span>
+          </div>
+          <a href="#contacto" class="btn btn-outline on-dark reveal" style="margin-top:30px" data-cursor-pop><i data-lucide="calendar-heart"></i> Consultar disponibilidad</a>
+        </div>
+        <div class="events-gallery reveal">
+          <div class="eg"><i data-lucide="piano"></i></div>
+          <div class="eg"><i data-lucide="mic-vocal"></i></div>
+          <div class="eg"><i data-lucide="guitar"></i></div>
+          <div class="eg"><i data-lucide="party-popper"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIOS ============ -->
+  <section class="section-pad" id="testimonios" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow" data-reveal>Lo que dicen</p>
+          <h2 class="section-title" data-reveal>Historias desde el <em>salón</em></h2>
+        </div>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="testi-track" id="testiTrack">
+        <article class="testi-card reveal">
+          <div class="testi-stars">★★★★★</div>
+          <p class="quote">Mi hija empezó piano sin saber nada y en tres meses ya tocaba sus canciones favoritas. Las clases son cercanas, nunca aburridas.</p>
+          <div class="testi-person"><div class="testi-avatar" style="background:var(--magenta)">M</div><div><strong>Mamá de alumna</strong><span>Piano, 3 meses</span></div></div>
+        </article>
+        <article class="testi-card reveal">
+          <div class="testi-stars">★★★★★</div>
+          <p class="quote">Retomé la guitarra después de años y el profesor adaptó todo a mi nivel. Se nota la experiencia y la paciencia.</p>
+          <div class="testi-person"><div class="testi-avatar" style="background:var(--violet)">R</div><div><strong>Alumno adulto</strong><span>Guitarra</span></div></div>
+        </article>
+        <article class="testi-card reveal">
+          <div class="testi-stars">★★★★★</div>
+          <p class="quote">Las clases de arte son un espacio de calma en la semana. Aprendemos técnicas nuevas cada vez, sin presión.</p>
+          <div class="testi-person"><div class="testi-avatar" style="background:var(--marigold)">L</div><div><strong>Alumna de pintura</strong><span>Arte, taller mensual</span></div></div>
+        </article>
+        <article class="testi-card reveal">
+          <div class="testi-stars">★★★★★</div>
+          <p class="quote">Contratamos la musicalización para nuestra boda y fue exactamente el ambiente que buscábamos. Súper profesionales.</p>
+          <div class="testi-person"><div class="testi-avatar" style="background:var(--teal)">P</div><div><strong>Pareja de novios</strong><span>Musicalización de evento</span></div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ UBICACIÓN ============ -->
+  <section class="section-pad" id="ubicacion">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow" data-reveal>Dónde estamos</p>
+          <h2 class="section-title" data-reveal>Te esperamos en <em>Barcequillo</em></h2>
+        </div>
+      </div>
+      <div class="location-grid">
+        <div class="location-card reveal">
+          <div>
+            <div class="location-row"><i data-lucide="map-pin"></i><div><strong>Barcequillo</strong><span>1723 Pirizal</span></div></div>
+            <div class="location-row"><i data-lucide="school"></i><div><strong>Referencia</strong><span>A una cuadra del Colegio Sudamericano</span></div></div>
+            <div class="location-row"><i data-lucide="car"></i><div><strong>Acceso</strong><span>Estacionamiento fácil en la cuadra</span></div></div>
+          </div>
+          <a href="#contacto" class="btn btn-outline on-dark reveal" style="margin-top:26px" data-cursor-pop><i data-lucide="navigation"></i> Cómo llegar</a>
+        </div>
+        <iframe class="map-frame reveal" src="https://www.google.com/maps?q=Barcequillo,Pirizal,San+Lorenzo,Paraguay&output=embed" title="Mapa de ubicación de Casa Creativa en Barcequillo" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTO ============ -->
+  <section class="section-pad" id="contacto">
+    <div class="wrap">
+      <div class="contact-panel">
+        <canvas id="confetti-canvas" aria-hidden="true"></canvas>
+        <p class="eyebrow on-dark" style="justify-content:center" data-reveal>Empecemos</p>
+        <h2 data-reveal>¿Listo para descubrir tu talento creativo?</h2>
+        <p class="section-lede" data-reveal>Escribinos por WhatsApp y coordinamos tu primera clase — música, arte, inglés o musicalización de tu evento.</p>
+
+        <div class="whatsapp-cta reveal">
+          <a class="btn whatsapp-big btn-whatsapp" href="https://wa.me/595986848246?text=Hola%20Casa%20Creativa%2C%20quiero%20agendar%20una%20clase" target="_blank" rel="noopener" data-cursor-pop>
+            <i data-lucide="message-circle"></i> Escribir por WhatsApp
+          </a>
+        </div>
+
+        <div class="contact-phones reveal">
+          <a href="tel:+595986848246"><i data-lucide="phone"></i> 0986 848246</a>
+          <a href="tel:+595984177738"><i data-lucide="phone"></i> 0984 177738</a>
+          <a href="mailto:hola@casacreativa.com.py"><i data-lucide="mail"></i> hola@casacreativa.com.py</a>
+        </div>
+
+        <div class="contact-socials reveal">
+<a class="social-btn" href="https://facebook.com/casacreativa" target="_blank" rel="noopener" aria-label="Facebook de Casa Creativa">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+</a>
+<a class="social-btn" href="https://instagram.com/casacreativa" target="_blank" rel="noopener" aria-label="Instagram de Casa Creativa">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+</a>
+          <a class="social-btn" href="mailto:hola@casacreativa.com.py" aria-label="Escribir un correo"><i data-lucide="mail"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <a href="#main" class="nav-logo"><span class="dot"></span>Casa Creativa</a>
+      <p class="footer-quote">"La creatividad comienza cuando decidís aprender."</p>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Casa Creativa · Barcequillo, San Lorenzo, Paraguay</p>
+      <div class="footer-links">
+        <a href="#aprender">Aprender</a>
+        <a href="#profesores">Profesores</a>
+        <a href="#ubicacion">Ubicación</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/595986848246?text=Hola%20Casa%20Creativa%2C%20quiero%20agendar%20una%20clase" target="_blank" rel="noopener" class="float-whatsapp" aria-label="Escribir por WhatsApp">
+  <span class="ping" aria-hidden="true"></span>
+  <i data-lucide="message-circle"></i>
+</a>
+
+<!-- ============ SCRIPTS ============ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/splitting@1.1.0/dist/splitting.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+<script src="js/main.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/components.js"></script>
+</body>
+</html>
